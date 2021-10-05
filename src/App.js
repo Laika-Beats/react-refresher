@@ -1,10 +1,10 @@
-import TestComponent from "./TestComponent";
+import Tweet from "./components/Tweet";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello React</h1>
-      <TestComponent />
+      <h1>App Test</h1>
+      <Tweet />
     </div>
   );
 }

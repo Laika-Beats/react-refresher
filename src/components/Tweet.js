@@ -1,6 +1,6 @@
-const Tweet = ({ author, message, tweet, setTweets }) => {
+const Tweet = ({ author, setTweets, tweets, tweet, id }) => {
   const deleteTweetHandler = () => {
-    console.log(tweet);
+    setTweets(tweets.filter((state) => state.id !== id));
   };
   return (
     <div>

@@ -4,7 +4,14 @@ function TweetList({ tweets, author, setTweets }) {
   return (
     <div>
       {tweets.map((tweet) => (
-        <Tweet author={author} tweet={tweet} setTweets={setTweets} />
+        <Tweet
+          author={author}
+          tweet={tweet.message}
+          tweets={tweets}
+          key={tweet.id}
+          id={tweet.id}
+          setTweets={setTweets}
+        />
       ))}
     </div>
   );

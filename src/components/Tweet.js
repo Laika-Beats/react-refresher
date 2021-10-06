@@ -4,7 +4,7 @@ const Tweet = ({ author, setTweets, tweets, tweet, id }) => {
   };
   return (
     <div>
-      <h2>{author}</h2>
+      <h2 style={{ color: "red" }}>{author}</h2>
       <h3>{tweet}</h3>
       <button onClick={deleteTweetHandler}>Delete</button>
       <button>Like</button>

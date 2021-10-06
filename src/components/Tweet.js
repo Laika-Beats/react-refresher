@@ -1,9 +1,12 @@
-const Tweet = ({ author, message }) => {
+const Tweet = ({ author, message, tweet, setTweets }) => {
+  const deleteTweetHandler = () => {
+    console.log(tweet);
+  };
   return (
     <div>
       <h2>{author}</h2>
-      <h3>{message}</h3>
-      <button>Delete</button>
+      <h3>{tweet}</h3>
+      <button onClick={deleteTweetHandler}>Delete</button>
       <button>Like</button>
     </div>
   );

@@ -8,7 +8,6 @@ function App() {
   const [tweets, setTweets] = useState([]);
 
   const author = "Joshua Thompson";
-  const message = "test tweet text";
 
   return (
     <div className="App">
@@ -18,7 +17,7 @@ function App() {
         tweets={tweets}
         setTweets={setTweets}
       />
-      <TweetList author={author} message={message} />
+      <TweetList author={author} tweets={tweets} />
     </div>
   );
 }

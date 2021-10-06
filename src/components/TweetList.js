@@ -1,11 +1,11 @@
 import Tweet from "./Tweet";
 
-function TweetList({ author, message }) {
+function TweetList({ tweets, author, setTweets }) {
   return (
     <div>
-      <Tweet author={author} message={message} />
-      <Tweet author={author} message={message} />
-      <Tweet author={author} message={message} />
+      {tweets.map((tweet) => (
+        <Tweet author={author} tweet={tweet} setTweets={setTweets} />
+      ))}
     </div>
   );
 }
